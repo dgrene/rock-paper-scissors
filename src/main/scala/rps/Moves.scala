@@ -2,16 +2,6 @@ package rps
 
 case object Move {
   val values: List[Move] = List(Rock, Paper, Scissors, Lizard, Spock)
-//  lazy val numberToMoveName: SortedMap[Int, String] = {
-//    val elements = values
-//      .zipWithIndex
-//      .map { case (move, index) => (index + 1, move.toString) }
-//      .sortBy(_._1)
-//
-//    SortedMap(elements: _*)
-//  }
-//
-//  def findByNumber(number: Int): Move = values(number - 1)
 }
 
 sealed trait Move {
